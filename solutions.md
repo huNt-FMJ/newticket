@@ -16,13 +16,21 @@ curl -i https://api.github.com/users/jamuc/repos
 - Create a new repository called "MyPostman" with REST API for yourself
 
 curl -i -H "Authorization: token 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" \
-    -d '{
+    -d
+	 '{
+		 
         "name": "MyPostman",
+		
         "auto_init": true,
+		
         "private": true,
+		
         "gitignore_template": "nanoc"
+		
       }' \
+	  
    https://api.github.com/user/repos
+   
 
 
 #Task-4
